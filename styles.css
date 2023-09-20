@@ -1,10 +1,14 @@
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+html {
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    line-height: 1.15;
+}
 body {
 	margin: 30px;
-}
-body, div, p {
-	font-family: verdana;
-	font-size: 8pt;
-	line-height: 17pt;
 }
 #nav_column_content, #hide_nav_link { display: block; }
 #show_nav_link { display: none; }
@@ -86,5 +90,5 @@ body, div, p {
 	padding: 20px;
 	background-color: #f2f2f2;
 	border: 1px solid #dddddd;
-	width: 160px;
+	width: max-content;
 }
