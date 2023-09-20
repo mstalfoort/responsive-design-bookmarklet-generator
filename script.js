@@ -42,7 +42,7 @@ bm_ns.generate_bookmarklet = function(highlight) {
 			label = "(" + label + ")";
 		}
 		link += "<div class=&quot;frame&quot;><h2>" + width + "<span> x " + height + "</span> <small>" + label + "</small></h2>"
-					+ "<iframe src=&quot;' + window.location + '&quot; sandbox=&quot;allow-same-origin allow-forms&quot; seamless "
+					+ "<iframe src=&quot;' + window.location + '&quot; sandbox=&quot;allow-forms allow-same-origin allow-scripts&quot; seamless "
 					+ "width=&quot;" + width + "&quot; height=&quot;" + height + "&quot;></iframe></div>"
 	});
 	link += "</div></body></html>')";

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Responsive Design Test Bookmarklet</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
@@ -12,22 +14,15 @@
 	<h1>Responsive Design Test Bookmarklet</h1>
 
     <p>
-      This was inspired by, and based on <a href="https://twitter.com/#!/lensco">@lensco</a>'s excellent <a
-      href="http://bricss.net/post/16538278376/simple-responsive-design-test-page">Simple Responsive
-      Design Test Page</a>. It lets you view any webpage in multiple screen sizes, simulating the viewport of different
-      devices. After getting such a positive response to my original post, I thought I'd expand on it a little. Since
-      people are obviously targeting different device screen sizes with their projects, the form below
-      now lets you generate a <i>custom</i> bookmarklet that displays only those device sizes you're interested in.
+      All credits to <a href="https://github.com/benkeen/responsive-design-bookmarklet-generator">Ben Keen</a>
     </p>
-
-    <p>
-      A big thanks to Alaska Airlines for the delayed flight that made this possible, and the really boring
-      project that I know I <i>should</i> be working on, but can't find the motivation. Urgh.
+    <p>It lets you view any webpage in multiple screen sizes, simulating the viewport of different
+      devices. The form below lets you generate a <i>custom</i> bookmarklet that displays only those device sizes you're interested in.
     </p>
 
     <hr size="1" />
 
-    <h4>1. Select Device Sizes</h4>
+    <h2>1. Select Device Sizes</h2>
 
     <div id="bm_generate">
       <ul class="heading">
@@ -39,16 +34,6 @@
       </ul>
       <div class="clear"></div>
       <div class="sortable">
-        <div class="row">
-          <ul>
-            <li class="col0 sort">&nbsp;</li>
-            <li class="col1"><input type="text" value="240" /></li>
-            <li class="col2"><input type="text" value="320" /></li>
-            <li class="col3"><input type="text" value="mobile" /></li>
-            <li class="col4 colN del">x</li>
-          </ul>
-          <div class="clear"></div>
-        </div>
         <div class="row">
           <ul>
             <li class="col0 sort">&nbsp;</li>
@@ -102,14 +87,16 @@
       </div>
     </div>
 
-    <p id="add_row_link">Add row &raquo;</p>
+    <p><button type="button" id="add_row_link">Add row &raquo;</button></p>
 
-    <h4>2. Generate the Bookmarklet</h4>
+    <h2>2. Generate the Bookmarklet</h2>
 
     <span id="generate_btn">Generate!</span>
 
+    <h2>3. Drag the Bookmarklet</h2>
+
     <p>
-      Drag the following link to your bookmark toolbar in your browser, and click on it. Man, I love javascript.
+      Drag the following link to your bookmark toolbar in your browser, and click on it.
     </p>
 
     <p id="bookmarklet_link"></p>
